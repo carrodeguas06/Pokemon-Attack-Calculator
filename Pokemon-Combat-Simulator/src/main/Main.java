@@ -214,15 +214,15 @@ public class Main
             maxHit = Attack.maxHit(stab, atk, def, efectivity, level, power);
         }
 
-        System.out.println("The minimal damage is: " + minHit + "ps");
-        System.out.println("The maximal damage is: " + maxHit + "ps");
+        System.out.println("The minimum damage is: " + minHit + "ps");
+        System.out.println("The maximum damage is: " + maxHit + "ps");
     }
 
     private static void changeAttacker()
     {
         System.out.println("That's your Attacker:\n" + attacker.toString() );
         System.out.println("""
-                What do tou whant change?
+                What do tou want to change?
                 1. All
                 2. Attack
                 3. Special Attack
@@ -245,7 +245,7 @@ public class Main
                 break;
 
             case 2:
-                System.out.println("Thats your attack?: " );
+                System.out.println("That is your attack?: " );
 
                 try {
                     atk = readNumber();
@@ -322,7 +322,7 @@ public class Main
     {
         System.out.println("That's your defender:\n" + defender.toString());
         System.out.println("""
-                What do tou whant change?
+                What do tou want to change?
                 1. All
                 2. Attack
                 3. Special Attack
@@ -343,7 +343,7 @@ public class Main
                 break;
 
             case 2:
-                System.out.println("Thats your defense?: " );
+                System.out.println("That is your defense?: " );
 
                 try {
                     def = readNumber();
@@ -362,7 +362,7 @@ public class Main
                 break;
 
             case 3:
-                System.out.println("Thats your special attack?: " );
+                System.out.println("That is your special attack?: " );
 
                 try {
                     sDef = readNumber();
@@ -508,8 +508,8 @@ public class Main
     private static void description()
     {
         System.out.println("""
-                This is a 1st Gen calculator atack program.
-                In this proyect we only have the 1st Gen Pokemon types without critical hits.
+                This is a 1st Gen calculator attack program.
+                In this proyect we only have the 1st Gen Pokemon types, and without critical hits.
                 """);
     }
 
@@ -530,7 +530,7 @@ public class Main
                 6.Flying        13.Psychic
                 7.Ghost         14.Rock
                 
-                If you select other number the tipe will be normal.
+                If you select other number the type will be Normal.
                 Select the type:""");
 
         int typeOption;
@@ -684,7 +684,7 @@ public class Main
                 6.Flying        13.Psychic
                 7.Ghost         14.Rock
                 
-                If you select other number the tipe will be normal.
+                If you select other number the type will be normal.
                 Select the 1st Pokemon type:""");
 
         int typeOption;
